@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/bg-img.jpg");
+  background-size: cover;
+}
+
+header .menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.logo {
+  width: 20%;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.logo h1 {
+  color: orangered;
+  opacity: 0.8;
+}
+
+header .menulist {
+  width: 80%;
+  text-align: right;
+  padding-right: 50px;
+}
+
+.menulist li {
+  display: inline;
+  text-transform: uppercase;
+  list-style: none;
+  letter-spacing: 2px;
+  padding-left: 50px;
+}
+
+.menulist li a {
+  color: white;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.menulist li a:hover {
+  color: orangered;
+  opacity: 0.8;
+}
+
+header .content {
+  text-transform: uppercase;
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #e3e1db;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contrast {
+  color: orangered !important;
+}
+
+header .content h2 {
+  margin-bottom: 50px;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+}
+
+header .content h1 {
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 0.6em;
+}
+
+header .content button {
+  height: auto;
+  padding: 8px 37px;
+  color: white;
+  font-size: 15px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: transparent;
+}
+
+header .content button:hover {
+  background-color: orangered;
+  border: 1px solid white;
+}
+
+@media (max-width: 1200px) {
+  header .menulist {
+    padding-right: 20px;
+  }
+
+  .menulist li {
+    letter-spacing: 1px;
+    padding-left: 20px;
+  }
+
+  .logo {
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .logo h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 963px) {
+  header .menulist {
+    padding-right: 20px;
+  }
+
+  .menulist li {
+    letter-spacing: 1px;
+    padding-left: 15px;
+  }
+
+  .logo {
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .logo h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 700px) {
+  header .menu {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 20px;
+  }
+  header .menulist {
+    width: 100%;
+    text-align: center;
+    padding-right: 0px;
+    margin-top: 20px;
+  }
+  .menulist li {
+    letter-spacing: 1px;
+    padding-left: 10px;
+  }
+  header .content h2 {
+    font-size: 12px;
+  }
+  
+  header .content h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 320px) {
+  header .menulist {
+    padding-right: 0px;
+  }
+
+  .menulist li {
+    letter-spacing: 1px;
+    padding-left: 5px;
+  }
+
+  .logo {
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  button{
+    margin-top: 10px;
+  }
+}
